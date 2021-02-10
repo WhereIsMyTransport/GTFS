@@ -596,7 +596,7 @@ namespace GTFS
         }
 
         /// <summary>
-        /// Reads the agency file.
+        /// Reads the GTFS file.
         /// </summary>
         /// <typeparam name="TEntity"></typeparam>
         /// <param name="file"></param>
