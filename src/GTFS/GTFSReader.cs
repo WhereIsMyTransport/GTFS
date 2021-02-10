@@ -414,7 +414,7 @@ namespace GTFS
         {
             switch (file.Name.ToLower())
             {
-                case "attribution":
+                case "attributions":
                     this.Read<Attribution>(file, feed, this.ParseAttribution, feed.Attributions.Add);
                     break;
                 case "agency":
@@ -723,7 +723,7 @@ namespace GTFS
                 case "is_authority":
                     attribution.IsAuthority = this.ParseFieldBool(header.Name, fieldName, value);
                     break;
-                case "atribution_url":
+                case "attribution_url":
                     attribution.URL = this.ParseFieldString(header.Name, fieldName, value);
                     break;
                 case "attribution_email":
