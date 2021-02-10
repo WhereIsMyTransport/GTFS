@@ -120,9 +120,9 @@ namespace GTFS.Entities
                 hash = hash * 89 + this.RouteId.GetHashCodeEmptyWhenNull();
                 hash = hash * 89 + this.TripId.GetHashCodeEmptyWhenNull();
                 hash = hash * 89 + this.OrganisationName.GetHashCodeEmptyWhenNull();
-                hash = hash * 89 + this.IsProducer.GetValueOrDefault().GetHashCode();
-                hash = hash * 89 + this.IsOperator.GetValueOrDefault().GetHashCode();
-                hash = hash * 89 + this.IsAuthority.GetValueOrDefault().GetHashCode();
+                hash = hash * 89 + (this.IsProducer ?? false).GetHashCode();
+                hash = hash * 89 + (this.IsOperator ?? false).GetHashCode();
+                hash = hash * 89 + (this.IsAuthority ?? false).GetHashCode();
                 hash = hash * 89 + this.URL.GetHashCodeEmptyWhenNull();
                 hash = hash * 89 + this.Email.GetHashCodeEmptyWhenNull();
                 hash = hash * 89 + this.Phone.GetHashCodeEmptyWhenNull();
