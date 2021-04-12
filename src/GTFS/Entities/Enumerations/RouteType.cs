@@ -28,35 +28,35 @@ namespace GTFS.Entities.Enumerations
     public enum RouteType
     {
         /// <summary>
-        /// Any light rail or street level system within a metropolitan area.
+        /// Tram, Streetcar, Light rail. Any light rail or street level system within a metropolitan area.
         /// </summary>
         Tram,
         /// <summary>
-        /// Any underground rail system within a metropolitan area.
+        /// Subway, Metro. Any underground rail system within a metropolitan area.
         /// </summary>
         SubwayMetro,
         /// <summary>
-        /// Used for intercity or long-distance travel.
+        /// Rail. Used for intercity or long-distance travel.
         /// </summary>
         Rail,
         /// <summary>
-        /// Used for short- and long-distance bus routes.
+        /// Bus. Used for short- and long-distance bus routes.
         /// </summary>
         Bus,
         /// <summary>
-        /// Used for short- and long-distance boat service.
+        /// Ferry. Used for short- and long-distance boat service.
         /// </summary>
         Ferry,
         /// <summary>
-        /// Used for street-level cable cars where the cable runs beneath the car.
+        /// Cable tram. Used for street-level rail cars where the cable runs beneath the vehicle, e.g., cable car in San Francisco.
         /// </summary>
         CableCar,
         /// <summary>
-        /// Typically used for aerial cable cars where the car is suspended from the cable.
+        /// Aerial lift, suspended cable car (e.g., gondola lift, aerial tramway). Cable transport where cabins, cars, gondolas or open chairs are suspended by means of one or more cables.
         /// </summary>
         Gondola,
         /// <summary>
-        /// Any rail system designed for steep inclines.
+        /// Funicular. Any rail system designed for steep inclines.
         /// </summary>
         Funicular,
         /// <summary>
@@ -520,7 +520,7 @@ namespace GTFS.Entities.Enumerations
         /// </summary>
         TaxiService = 1500,
         /// <summary>
-        /// CommunalTaxiService
+        /// CommunalTaxiService. Informal/Share Taxi
         /// </summary>
         CommunalTaxiService = 1501,
         /// <summary>
