@@ -1756,7 +1756,16 @@ namespace GTFS
             {
                 throw new GTFSParseException(name, fieldName, value);
             }
-            throw new GTFSParseException(name, fieldName, value);
+
+
+            try
+            {
+                return (RouteType)routeTypeValue;
+            }
+            catch
+            {
+                throw new GTFSParseException(name, fieldName, value);
+            }
         }
 
         /// <summary>
